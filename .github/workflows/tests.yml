@@ -38,7 +38,7 @@ jobs:
             python-version: "3.11"
 
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
 
     - name: Install system libraries
       if: contains(matrix.os, 'ubuntu') && contains(matrix.python-version, 'pypy')
